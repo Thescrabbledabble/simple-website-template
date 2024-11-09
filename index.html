@@ -62,7 +62,8 @@
             <h2>Games</h6>
             <p>
              <head>
-load(scrabby.html)
+var region = location.hash.toString() || '#first';
+     $('#content').load(region.slice(1) + 'scrabby.html')
 
     <footer>  
       Footer region
